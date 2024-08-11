@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'TrebuchetMS','Lucisda Sons Unicode','Lucida Grande','Arial','Sans-Serif';
+    box-sizing: border-box;
+}
+HTML,BODY
+{
+    width: 100%;
+    height: 100%;
+}
+#main
+{
+    width: 100%;
+    min-height: 100vh;
+}
+.top
+{
+    width: 100%;
+    min-height: 50vh;
+    background-image:url(images/img2/pexels-pixabay-262508.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.top.overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    background-color: orchid(0,0,0,0.295);
+}
+.text
+{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding:10vh;
+    color:white;
+    bottom: 5%;
+}
+.text h1
+{
+    font-weight:600;
+    font-size: 4vw
+}
+.text.image
+{
+    background-image: url(images/3d-rendering-website-hosting-concept_23-2149484780.png);
+    background-size: contain;
+    background-position: center;
+    min-height: 20vh;
+    width: 25vw;
+}
+.rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 12px;
+}
+.bottom
+{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1
+{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(images/woman-use-magnifying-glass-search-virtual-screen-data-search-technology-search-engine-optimization-woman-use-computer-searching-information-using-search-console-data-info_1075498-9497.png);
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+}
+.b1 p
+{
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+.b2
+{
+    width: 400px;
+    min-height: initial;
+    display: flex;
+    flex-direction: column;
+}
+.b2.up
+{
+    width:50%;
+    min-height:30vh;
+    background-image: url(file:///F:/HTML/PRACTICE/PROJECT/images/circle-with-colored-lines-circle-with-circle-middle_1034303-164720.png);
+    background-size: cover;
+    background-position: center;
+}
+.b2.up h1{
+    text-align: center;
+    padding: 30px;
+}
+.b2.up{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.b2.down{
+    width:100%;
+    min-height: 30vh;
+    background-image: url(file:///F:/HTML/PRACTICE/PROJECT/images/img2/pexels-vlada-karpovich-4050423.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2.down.top.overlay
+{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color:rgb(43, 226, 43);
+}
+.b3
+{
+        width: 100%;
+        min-height: inherit;
+        background-image: url(F:\HTML\PRACTICE\PROJECT\images\istockphoto-1933752815-1024x1024.jpg);
+        background-size: cover;
+        background-position:left top;
+}
+.b3.overlay
+{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vh 3vh;
+}
+.b3.overlay p
+{
+    padding:1.2vh;
+}
+@media(max-width: 700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3.overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+@media(max-width: 500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text.image{
+        height:200px;
+        width:140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .buttom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2.up{
+        min-height:40vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position:left;
+    }
+}
+
